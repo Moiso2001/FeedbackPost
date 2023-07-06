@@ -14,30 +14,36 @@ export type TypeFood = {
     name: string
     description: string
     comments: TypeComment[]
+    rate: number
 }
 
 export type TypeComment = {
     id: number
     text: string
     owner: number | string
+    rate: number
 }
 
 const commentSample: TypeComment[] = [{
     id: 1,
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore",
-    owner: 'Lorem'
+    owner: 'Lorem',
+    rate: 3
 }, {
     id: 2,
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore",
-    owner: 'Lorem'
+    owner: 'Lorem',
+    rate: 3
 }, {
     id: 3,
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore",
-    owner: 'Lorem'
+    owner: 'Lorem',
+    rate: 3
 } , {
     id: 4,
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore",
-    owner: 'Lorem'
+    owner: 'Lorem',
+    rate: 3
 }]
 
 const menuSample: TypeFood[] = [{
@@ -45,25 +51,29 @@ const menuSample: TypeFood[] = [{
     img: '',
     name: 'Lorem',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore',
-    comments: commentSample
+    comments: commentSample,
+    rate: 3
 } , {
     id: 2,
     img: '',
     name: 'Lorem',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore',
-    comments: commentSample
+    comments: commentSample,
+    rate: 3
 } , {
     id: 3,
     img: '',
     name: 'Lorem',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore',
-    comments: commentSample
+    comments: commentSample,
+    rate: 3
 } , {
     id: 4,
     img: '',
     name: 'Lorem',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore',
-    comments: commentSample
+    comments: commentSample,
+    rate: 3
 }]
 
 export const restaurants: TypeRestaurant[] = [{

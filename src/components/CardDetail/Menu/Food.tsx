@@ -26,7 +26,7 @@ export default function Food({img,name,description,comments}: FoodProps ){
                     <span>{comments.length}</span>
                 </div>
                 <div>
-                    {<Comments comments={comments}/>}
+                    {comments.map(e => <Comments key={e.id} owner={e.owner} text={e.text} rate={e.rate}/>)}
                 </div>
                 <div>
                     <form>
