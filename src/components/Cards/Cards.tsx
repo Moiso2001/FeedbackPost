@@ -10,6 +10,7 @@ import Card from './Card/Card'
 export default function Cards() {
   return (
     <div>
+      <div>
         {restaurants.map((e: TypeRestaurant) => 
           <Card 
             key={e.id}
@@ -22,6 +23,10 @@ export default function Cards() {
             menu={e.menu}
           />
         )}
+      </div>
+      <div>
+        <button>View All</button>
+      </div>
     </div>
   )
 }

@@ -8,7 +8,7 @@ export type TypeRestaurant = {
     menu: TypeFood[]
 }
 
-type TypeFood = {
+export type TypeFood = {
     id: number
     img: string
     name: string
@@ -16,7 +16,7 @@ type TypeFood = {
     comments: TypeComment[]
 }
 
-type TypeComment = {
+export type TypeComment = {
     id: number
     text: string
     owner: number | string
