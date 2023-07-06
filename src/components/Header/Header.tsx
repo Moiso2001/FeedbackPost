@@ -1,5 +1,5 @@
 /* React God */
-import React from 'react';
+//import React from 'react';
 
 /* REACT ICONS */
 import {CiSearch} from "react-icons/ci";
@@ -10,7 +10,7 @@ export default function Header() {
   return (
     <div>
         <div>
-            <h1>Feedback</h1>
+            <h2>Feedback</h2>
             <h2>Post</h2>
         </div>
         <div>

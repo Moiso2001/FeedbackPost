@@ -1,5 +1,8 @@
 import React from 'react';
 
+/* React Icons */
+import {AiOutlineHeart} from "react-icons/ai"
+
 type CardProps = {
     id: number
     img: string
@@ -13,6 +16,9 @@ type CardProps = {
 export default function Card({id, img, name, description, cost, location, menu}: CardProps) {
   return (
     <div>
+        <div>
+          <AiOutlineHeart/>
+        </div>
         <div>
             <img src={img}/>
         </div>
