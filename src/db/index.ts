@@ -1,5 +1,6 @@
-type TypeRestaurant = {
+export type TypeRestaurant = {
     id: number
+    img: string
     name: string
     description: string
     cost: number
@@ -9,6 +10,7 @@ type TypeRestaurant = {
 
 type TypeFood = {
     id: number
+    img: string
     name: string
     description: string
     comments: TypeComment[]
@@ -40,28 +42,33 @@ const commentSample: TypeComment[] = [{
 
 const menuSample: TypeFood[] = [{
     id: 1,
+    img: '',
     name: 'Lorem',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore',
     comments: commentSample
 } , {
     id: 2,
+    img: '',
     name: 'Lorem',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore',
     comments: commentSample
 } , {
     id: 3,
+    img: '',
     name: 'Lorem',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore',
     comments: commentSample
 } , {
     id: 4,
+    img: '',
     name: 'Lorem',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore',
     comments: commentSample
 }]
 
-const restaurants: TypeRestaurant[] = [{
+export const restaurants: TypeRestaurant[] = [{
     id: 1,
+    img: '',
     name: 'Lorem',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
     cost: 3,
@@ -70,6 +77,7 @@ const restaurants: TypeRestaurant[] = [{
 
 } , {
     id: 2,
+    img: '',
     name: 'Lorem',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
     cost: 4,
@@ -78,6 +86,7 @@ const restaurants: TypeRestaurant[] = [{
 
 } , {
     id: 3,
+    img: '',
     name: 'Lorem',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
     cost: 3,
@@ -86,6 +95,7 @@ const restaurants: TypeRestaurant[] = [{
 
 } , {
     id: 4,
+    img: '',
     name: 'Lorem',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
     cost: 6,
@@ -94,6 +104,7 @@ const restaurants: TypeRestaurant[] = [{
 
 } , {
     id: 5,
+    img: '',
     name: 'Lorem',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
     cost: 3,
@@ -102,6 +113,7 @@ const restaurants: TypeRestaurant[] = [{
 
 } , {
     id: 6,
+    img: '',
     name: 'Lorem',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
     cost: 3,
