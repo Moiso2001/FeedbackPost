@@ -6,7 +6,7 @@ import { restaurants, TypeRestaurant } from '../../db'
 
 /* Card import */
 import Card from './Card/Card'
-// Testing
+// Testin
 export default function Cards() {
   return (
     <div>
