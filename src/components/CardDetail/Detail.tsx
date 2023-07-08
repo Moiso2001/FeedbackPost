@@ -3,7 +3,7 @@ import {useState, useEffect} from 'react';
 import { useParams } from 'react-router-dom';
 
 /* DB */
-import { TypeFood, TypeRestaurant } from '../../db'
+import { TypeFood, TypeRestaurant, getRestaurantById } from '../../db'
 
 /* Components */
 import Food from './Menu/Food'
@@ -14,8 +14,11 @@ export default function Detail() {
     const [restaurant, setRestaurant] = useState<TypeRestaurant | undefined>();
     const {id} = useParams();
 
+    console.log(id)
     useEffect(() => {
-
+        if(id){
+            setRestaurant(getRestaurantById(Number(id)))
+        } 
     }, [])
 
 

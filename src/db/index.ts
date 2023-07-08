@@ -131,3 +131,9 @@ export const restaurants: TypeRestaurant[] = [{
     menu: menuSample
 
 }] 
+
+/* Services */
+
+export function getRestaurantById(id: number) {
+    return restaurants.find(e => e.id === id)
+}
