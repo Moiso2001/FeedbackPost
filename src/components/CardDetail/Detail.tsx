@@ -1,14 +1,22 @@
 /* React */
-import {useState} from 'react'
+import {useState, useEffect} from 'react';
+import { useParams } from 'react-router-dom';
+
+/* DB */
 import { TypeFood, TypeRestaurant } from '../../db'
+
+/* Components */
 import Food from './Menu/Food'
 
-type DetailProps = {
-    id: number
-}
 
-export default function Detail({id}: DetailProps) {
-    const [restaurant, setRestaurant] = useState<TypeRestaurant | undefined>()
+
+export default function Detail() {
+    const [restaurant, setRestaurant] = useState<TypeRestaurant | undefined>();
+    const {id} = useParams();
+
+    useEffect(() => {
+
+    }, [])
 
 
 

@@ -4,8 +4,10 @@ import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 /* Components */
-import Header from "./components/Header/Header"
-import Home from "./components/Home/Home"
+import Header from "./components/Header/Header";
+import Login from './components/Login/Login';
+import Home from "./components/Home/Home";
+import Detail from './components/CardDetail/Detail';
 
 function App() {
 
@@ -13,8 +15,12 @@ function App() {
     <>
       <BrowserRouter>
         <Header/>
+
         <Routes>
+
           <Route path='/' element={<Home/>}/>
+          <Route path='/login' element={<Login/>}/>
+          <Route path='/restaurant/:id' element={<Detail/>}/>
         </Routes>
       </BrowserRouter>
     </>
