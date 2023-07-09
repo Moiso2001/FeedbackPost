@@ -1,6 +1,7 @@
 /* React Icons */
 import {CiFacebook} from "react-icons/ci" // Facebook
-import {PiInstagramLogoLight, PiTiktokLogoLight} from "react-icons/pi" // Instagram n Tiktok
+import {PiInstagramLogoLight, PiTiktokLogoLight, PiStarFourThin} from "react-icons/pi" // Instagram n Tiktok
+
 
 /* Images png */
 import homeImage from "../../assets/steps icon.png"
@@ -11,6 +12,9 @@ import s from './Home.module.css';
 export default function Home() {
   return (
     <div className={s.div_global}>
+      {/* Random Stars to decore */}
+      <PiStarFourThin className={s.star_1}/>
+
       <div className={s.div_text}>
         <h4>Taste of your favorite food !</h4>
         <h2>Top-notch eateries, just for you!</h2>
@@ -20,15 +24,17 @@ export default function Home() {
         </p>
         <button>Give your opinion</button>
 
-        <div>
+        <div className={s.div_social}>
           <CiFacebook/>
           <PiInstagramLogoLight/>
           <PiTiktokLogoLight/>
         </div>
+        <PiStarFourThin className={s.star_2}/> 
       </div>
-
+ 
       <div>
         <img src={homeImage} alt='image of plate of food and steps'/>
+        <PiStarFourThin className={s.star_3}/> 
       </div>
     </div>
   )
