@@ -1,6 +1,9 @@
 
 /* DB Types */
 
+/* React Icons */
+import {BsFillHandThumbsUpFill, BsFillHandThumbsDownFill} from "react-icons/bs"
+
 type CommentsProps = {
     text: string
     owner: string | number
@@ -10,6 +13,10 @@ type CommentsProps = {
 export default function Comments({text, owner, rate}: CommentsProps) {
   return (
     <div>
+      <div>
+        <img/>
+      </div>
+      <div>
         <div>
             <span>{owner}</span>
             <span>{rate}</span>
@@ -17,6 +24,15 @@ export default function Comments({text, owner, rate}: CommentsProps) {
         <div>
             <p>{text}</p>
         </div>
+        <div>
+          <span>reply</span>
+          <span>share</span>
+          <span>490 likes</span>
+          <BsFillHandThumbsDownFill/>
+          <BsFillHandThumbsUpFill/>
+        </div>
+      </div>
+      <hr/>
     </div>
   )
 }

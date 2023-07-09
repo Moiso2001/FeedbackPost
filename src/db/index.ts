@@ -135,5 +135,7 @@ export const restaurants: TypeRestaurant[] = [{
 /* Services */
 
 export function getRestaurantById(id: number) {
-    return restaurants.find(e => e.id === id)
+    const result = restaurants.find(e => e.id === id)
+
+    return result ? result : undefined
 }
