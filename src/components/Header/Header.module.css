@@ -1,0 +1,98 @@
+.div_global{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+
+    padding: 3em;
+}
+
+.div_title{
+    display: flex;
+}
+
+.title_yellow{
+    color:#D4B703
+}
+
+.title_green{
+    color: #2A8F03
+}
+
+.div_navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: default;
+
+    font-weight: bold;
+
+    color: rgba(0, 0, 0, 0.631);
+}
+
+.div_navbar ul{
+    display: flex;
+    list-style: none;
+
+    gap:20%
+}
+
+.div_helpers{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.helpers_search{
+    display: flex;
+    align-items: center;
+    width: 300px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.helpers_search input{
+    flex: 4;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    background-color: transparent;
+    outline: none;
+}
+
+.search_icon{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #D4B703;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 0.6em 0 0.6em 0;
+
+    font-size: 1.3em;
+}
+
+.search_icon:hover{
+    background-color: #d4b803ad;
+}
+
+.helpers_icons{
+    display: flex;
+
+    justify-self: center;
+    align-content: center;
+}
+
+.icon_profile{
+    font-size: 1.6em;
+
+    color: rgba(0, 0, 0, 0.825);
+}
+
+.icon_premium{
+    font-size: 1.9em;
+    color: #D4B703
+}
