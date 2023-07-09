@@ -1,5 +1,3 @@
-import React from 'react'
-
 /* React Icons */
 import {CiFacebook} from "react-icons/ci" // Facebook
 import {PiInstagramLogoLight, PiTiktokLogoLight} from "react-icons/pi" // Instagram n Tiktok
@@ -7,18 +5,19 @@ import {PiInstagramLogoLight, PiTiktokLogoLight} from "react-icons/pi" // Instag
 /* Images png */
 import homeImage from "../../assets/steps icon.png"
 
+/* CSS */
+import s from './Home.module.css';
+
 export default function Home() {
   return (
-    <div>
-      <div>
-        <h4>Taste of your favorite food</h4>
-        <h2>The best restaurants around you, and for you ;)</h2>
-        <span>
+    <div className={s.div_global}>
+      <div className={s.div_text}>
+        <h4>Taste of your favorite food !</h4>
+        <h2>Top-notch eateries, just for you!</h2>
+        <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-          sed do eiusmod tempor incididunt ut labore et dolore magna 
-          aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-          ullamco
-        </span>
+          sed do eiusmod tempor incididunt ut labore et dolore magna.
+        </p>
         <button>Give your opinion</button>
 
         <div>

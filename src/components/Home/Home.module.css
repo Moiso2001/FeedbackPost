@@ -1,0 +1,47 @@
+.div_global{
+    display: grid;
+    grid-template-columns: 55% 45%;
+    padding: 4em 5em 5em 5em;
+}
+
+.div_global img{
+    width: 90%;
+}
+
+.div_text h4 {
+    font-family: 'Petit Formal Script', cursive;    
+    color: #D4B703;
+
+    font-size: 1.5em;
+
+    margin-bottom: 0px;
+}
+
+.div_text h2 {
+    color: rgba(0, 0, 0, 0.669);
+    font-size: 3.5em;
+
+    font-weight: 500;
+
+    margin: 0px 0px 1.3em 0px;
+}
+
+.div_text p {
+    width: 60%;
+
+    color: rgba(0, 0, 0, 0.61);
+    font-size: 0.8em;
+}
+
+.div_text button{
+    border: none;
+    border-radius: 10px;
+
+    background-color: #D4B703;
+    color: white;
+
+    font-weight: 300;
+
+    padding: 1em;
+    margin: 1.2em 0 2em 0.4em;
+}
