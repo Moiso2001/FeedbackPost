@@ -8,9 +8,10 @@ type FoodProps = {
     name: string
     description: string
     comments: TypeComment[]
+    rate: number
 }
 
-export default function Food({img,name,description,comments}: FoodProps ){
+export default function Food({img,name,description,comments, rate}: FoodProps ){
     return(
         <div>
             <div>
@@ -19,21 +20,12 @@ export default function Food({img,name,description,comments}: FoodProps ){
             <div>
                 <h3>{name}</h3>
                 <span>{description}</span>
-                <button>REVIEWS</button>
+                <button>Your Feedback</button>
             </div>  
             <div>
-                <div>
-                    <span>{comments.length}</span>
-                </div>
-                <div>
+                {/* <div>
                     {comments.map(e => <Comments key={e.id} owner={e.owner} text={e.text} rate={e.rate}/>)}
-                </div>
-                <div>
-                    <form>
-                        <textarea/>
-                        <button>Submit</button>
-                    </form>
-                </div>
+                </div> */}
             </div>
         </div>
     )

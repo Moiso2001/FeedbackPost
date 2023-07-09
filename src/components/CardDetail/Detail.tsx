@@ -41,6 +41,7 @@ export default function Detail() {
                         name={e.name}
                         description={e.description}
                         comments={e.comments}
+                        rate={e.rate}
                     />
                 )}
             </div>
