@@ -88,5 +88,76 @@
     margin-top: 21em;
     margin-left: -5em;
 
-    color: rgba(0, 0, 0, 0.549);
+}
+
+.div_title{
+  display: flex;
+
+  justify-content: center;
+  font-size: 0.8em;
+}
+
+.title_yellow{
+  color:#D4B703
+}
+
+.title_green{
+  color: #2A8F03
+}
+
+.div_navbar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: default;
+
+  font-weight: bold;
+
+  color: rgba(0, 0, 0, 0.631);
+}
+
+.div_navbar ul{
+  display: flex;
+  list-style: none;
+
+  gap:20%;
+  margin-left: -7.3em;
+}
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background-color: #d4b8030a;
+
+  padding-top: 1em;
+  margin-top: 5em;
+}
+
+.div_app{
+  display: flex;
+
+  justify-content: center;
+
+  gap: 2em;
+}
+
+.appIcon{
+  font-size: 3em;
+  cursor: pointer;
+}
+
+.div_footer__content{
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.div_footer__content p {
+  color: rgba(0, 0, 0, 0.644);
+  font-weight: 200;
 }
