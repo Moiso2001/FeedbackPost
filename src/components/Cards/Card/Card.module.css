@@ -1,0 +1,17 @@
+.div_global{
+    display: flex;
+    flex-direction: column;
+
+    background-color: #2b8f0355;
+
+    padding: 1em 2.2em 2.2em 2.2em;
+    border-radius: 1em;
+    margin: 1em;
+}
+
+.div_global img{
+    width: 20%;
+    border-radius: 100%;
+    width: 10em;
+    height: 10em;
+}

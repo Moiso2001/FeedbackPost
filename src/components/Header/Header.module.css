@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 33% 33% 33%;
 
-    padding: 3em;
+    padding: 2em 3em 1.5em 3em;
 }
 
 .div_title{

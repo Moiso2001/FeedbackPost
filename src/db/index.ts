@@ -78,8 +78,8 @@ const menuSample: TypeFood[] = [{
 
 export const restaurants: TypeRestaurant[] = [{
     id: 1,
-    img: '',
-    name: 'Lorem',
+    img: 'https://img.theculturetrip.com/wp-content/uploads/2022/01/andres-carne-de-res-restaurant-chia-cundinamarca-colombia.jpg',
+    name: 'Andres D.C',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
     cost: 3,
     location: '1111 N Lorem St',
@@ -87,8 +87,8 @@ export const restaurants: TypeRestaurant[] = [{
 
 } , {
     id: 2,
-    img: '',
-    name: 'Lorem',
+    img: 'https://media-cdn.tripadvisor.com/media/photo-s/15/15/da/15/terraza.jpg',
+    name: 'Giraotire',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
     cost: 4,
     location: '1111 N Lorem St',
@@ -96,35 +96,8 @@ export const restaurants: TypeRestaurant[] = [{
 
 } , {
     id: 3,
-    img: '',
-    name: 'Lorem',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
-    cost: 3,
-    location: '1111 N Lorem St',
-    menu: menuSample
-
-} , {
-    id: 4,
-    img: '',
-    name: 'Lorem',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
-    cost: 6,
-    location: '1111 N Lorem St',
-    menu: menuSample
-
-} , {
-    id: 5,
-    img: '',
-    name: 'Lorem',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
-    cost: 3,
-    location: '1111 N Lorem St',
-    menu: menuSample
-
-} , {
-    id: 6,
-    img: '',
-    name: 'Lorem',
+    img: 'https://d2yoo3qu6vrk5d.cloudfront.net/images/20211113115953/crepes-waffles_-cual-es-el-nuevo-proyecto-que-abrio-fuera-de-bogota_-fotos.jpg',
+    name: 'Creps & Waffles',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
     cost: 3,
     location: '1111 N Lorem St',
