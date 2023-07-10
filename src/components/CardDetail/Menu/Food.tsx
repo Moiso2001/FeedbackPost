@@ -1,4 +1,4 @@
-import React from 'react'
+import {useState} from 'react'
 
 import { TypeComment } from '../../../db'
 import Comments from './Comments/Comments'
@@ -6,6 +6,10 @@ import Comments from './Comments/Comments'
 /* React Icons */
 import {AiFillStar} from "react-icons/ai"
 import {BsArrowDownCircleFill} from "react-icons/bs"
+
+/* CSS */
+import s from "./Food.module.css"
+
 
 type FoodProps = {
     img: string
@@ -16,23 +20,27 @@ type FoodProps = {
 }
 
 export default function Food({img,name,description,comments, rate}: FoodProps ){
+    const [show, setShow] = useState<boolean>(false)
+
     return(
-        <div>
-            <div>
-                <img src={img}/>
-            </div>
-            <div>
+        <div className={s.div_global}>
+            <div className={s.div_food}>
                 <div>
-                    <h3>{name}</h3>
-                    <div>
-                        <span>{rate}</span>
-                        <AiFillStar/>
-                    </div>
+                    <div className={s.circle}/>
                 </div>
-                <span>{description}</span>
-                <button>Your Feedback</button>
-            </div>  
-            <div>
+                <div>
+                    <div>
+                        <h3>{name}</h3>
+                        <div>
+                            <span>{rate}</span>
+                            <AiFillStar/>
+                        </div>
+                    </div>
+                    <span>{description}</span>
+                    <button onClick={() => setShow(s => !s)}>Your Feedback</button>
+                </div>  
+            </div>
+            <div className={show ? s.div_comments : s.div_none}>
                 <div>
                     <h3>{comments.length}</h3>
                     <span>comments</span>

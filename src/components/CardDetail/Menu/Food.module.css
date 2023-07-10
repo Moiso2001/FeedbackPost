@@ -1,0 +1,22 @@
+.div_none{
+    display: none;
+}
+
+.div_global{
+    margin: 3em;
+    width: 60%;
+}
+
+.div_food{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.circle{
+    width: 18em;
+    height: 18em;
+
+    background-color: #d4b80388;
+
+    border-radius: 100%;
+}

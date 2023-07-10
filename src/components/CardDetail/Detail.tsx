@@ -8,13 +8,15 @@ import { TypeFood, TypeRestaurant, getRestaurantById } from '../../db'
 /* Components */
 import Food from './Menu/Food'
 
+/* CSS */
+import s from "./Detail.module.css"
+
 
 
 export default function Detail() {
     const [restaurant, setRestaurant] = useState<TypeRestaurant | undefined>();
     const {id} = useParams();
 
-    console.log(id)
     useEffect(() => {
         if(id){
             setRestaurant(getRestaurantById(Number(id)))
@@ -25,15 +27,16 @@ export default function Detail() {
 
     if(restaurant){
         return (
-          <div>
+          <div className={s.div_global}>
             <div>
                 <img src={restaurant.img}/>
             </div>
-            <div>
-                <h2>WELCOME TO ${restaurant.name.toUpperCase()}</h2>
+            <div className={s.div_header}>
+                <h2>WELCOME TO {restaurant.name.toUpperCase()}</h2>
+                <hr className={s.hr1}/>
                 <p>{restaurant.description}</p>
             </div>
-            <div>
+            <div className={s.div_food}>
                 {restaurant.menu.map((e: TypeFood) => 
                     <Food
                         key={e.id}

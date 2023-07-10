@@ -48,7 +48,7 @@ const commentSample: TypeComment[] = [{
 
 const menuSample: TypeFood[] = [{
     id: 1,
-    img: '',
+    img: 'https://img.freepik.com/fotos-premium/tazon-burrito-pollo-mexicano-arroz-frijoles-tomate-aguacate-maiz-espinacas-fondo-blanco-concepto-comida-cocina-mexicana_79830-2856.jpg?w=2000',
     name: 'Lorem',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore',
     comments: commentSample,
@@ -67,19 +67,12 @@ const menuSample: TypeFood[] = [{
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore',
     comments: commentSample,
     rate: 3
-} , {
-    id: 4,
-    img: '',
-    name: 'Lorem',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore',
-    comments: commentSample,
-    rate: 3
-}]
+} ]
 
 export const restaurants: TypeRestaurant[] = [{
     id: 1,
     img: 'https://img.theculturetrip.com/wp-content/uploads/2022/01/andres-carne-de-res-restaurant-chia-cundinamarca-colombia.jpg',
-    name: 'Andres D.C',
+    name: 'Andres Carne de Res',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
     cost: 3,
     location: '1111 N Lorem St',
