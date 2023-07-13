@@ -10,7 +10,7 @@ import {BsArrowDownCircleFill} from "react-icons/bs"
 /* CSS */
 import s from "./Food.module.css"
 
-//
+
 type FoodProps = {
     img: string
     name: string
