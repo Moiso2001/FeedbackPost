@@ -20,7 +20,7 @@ export type TypeFood = {
 export type TypeComment = {
     id: number
     text: string
-    owner: number | string
+    owner: string
     rate: string
 }
 
@@ -37,12 +37,12 @@ const commentSample: TypeComment[] = [{
 }, {
     id: 3,
     text: "I recently had the pleasure of enjoying their mouthwatering sushi rolls, and I must say, they were a culinary masterpiece. The sushi rolls were beautifully presented and made with the freshest fish available. Each piece was a perfect balance of flavors, and the fish melted in my mouth. The attention to detail in their sushi-making process was evident, and I can confidently say that it was one of the best sushi experiences I've had so far!",
-    owner: "SushiEnthusiast",
+    owner: "TheSushiEnthusiast",
     rate: "😍"
 }, {
     id: 4,
     text: "The dessert I had was a heavenly delight! It was a rich and decadent creation that showcased a perfect blend of flavors. The presentation of the dessert was artful, with intricate details that showed the skill and creativity of the chef. Every spoonful was a delight to the senses, and it left me craving for more. If you have a sweet tooth like me, you absolutely must try this dessert!",
-    owner: "SweetTooth",
+    owner: "MySweetTooth",
     rate: "😲"
 }];
 

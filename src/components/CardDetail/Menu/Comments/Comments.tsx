@@ -7,7 +7,7 @@ import {BsFillHandThumbsUpFill, BsFillHandThumbsDownFill} from "react-icons/bs"
 
 type CommentsProps = {
     text: string
-    owner: string | number
+    owner: string
     rate: string
 }
 
@@ -16,7 +16,7 @@ export default function Comments({text, owner, rate}: CommentsProps) {
     <div className={s.div_global}>
       <div className={s.div_circle2}>
         <div>
-          <span>J</span>
+          <span>{owner[0].toUpperCase()}</span>
         </div>
       </div>
       <div className={s.div_text}>
