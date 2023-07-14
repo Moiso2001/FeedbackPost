@@ -59,9 +59,16 @@ export default function Food({img, id,name,description,comments, rate}: FoodProp
                             <span>M</span>
                         </div>
                     </div>
-                    <div>
+                    <div className={s.div_moreInputs}>
                         <textarea placeholder='How was your experience...'/>
                         <button>Post</button>
+                        <div className={s.reaction_menu}>
+                            <div className={s.reaction_option}>😍</div>
+                            <div className={s.reaction_option}>😆</div>
+                            <div className={s.reaction_option}>😲</div>
+                            <div className={s.reaction_option}>😢</div>
+                            <div className={s.reaction_option}>😠</div>
+                        </div>
                     </div>
                 </div>
                 <div>
