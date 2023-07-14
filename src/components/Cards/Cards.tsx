@@ -5,10 +5,8 @@ import {BsFillArrowDownCircleFill} from "react-icons/bs"
 import { Link } from "react-router-dom"
 
 /* Import from DB (hardcode) */
-import { restaurants, TypeRestaurant } from '../../db'
 
 /* Card import */
-import Card from './Card/Card'
 
 /* CSS */
 import s from "./Cards.module.css" 

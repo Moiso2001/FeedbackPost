@@ -20,7 +20,7 @@ type FoodProps = {
     rate: number
 }
 
-export default function Food({img, id,name,description,comments, rate}: FoodProps ){
+export default function Food({id,name,description,comments, rate}: FoodProps ){
     const [show, setShow] = useState<boolean>(false)
 
     return(

@@ -1,4 +1,3 @@
-import React from 'react';
 
 /* React Icons */
 import {AiOutlineHeart} from "react-icons/ai"
@@ -16,7 +15,7 @@ type CardProps = {
     menu: unknown
 }
 
-export default function Card({id, img, name, description, cost, location, menu}: CardProps) {
+export default function Card({img, name, cost}: CardProps) {
   return (
     <div className={s.div_global}>
         <div>
