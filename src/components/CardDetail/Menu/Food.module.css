@@ -59,6 +59,7 @@
     font-weight: 600;
 
     padding: 1em;
+    cursor: pointer;
 }
 
 /* Comment Section */
@@ -150,6 +151,7 @@
     color: rgba(0, 0, 0, 0.555);
 
     transition: background-color 0.20s;
+    cursor: pointer;
 }
 
 .div_input button:hover{

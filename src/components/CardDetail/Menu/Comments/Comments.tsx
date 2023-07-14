@@ -1,5 +1,6 @@
 
-/* DB Types */
+/* CSS */
+import s from "./Comments.module.css"
 
 /* React Icons */
 import {BsFillHandThumbsUpFill, BsFillHandThumbsDownFill} from "react-icons/bs"
@@ -7,32 +8,34 @@ import {BsFillHandThumbsUpFill, BsFillHandThumbsDownFill} from "react-icons/bs"
 type CommentsProps = {
     text: string
     owner: string | number
-    rate: number
+    rate: string
 }
 
 export default function Comments({text, owner, rate}: CommentsProps) {
   return (
-    <div>
-      <div>
-        <img/>
-      </div>
-      <div>
+    <div className={s.div_global}>
+      <div className={s.div_circle2}>
         <div>
-            <span>{owner}</span>
+          <span>J</span>
+        </div>
+      </div>
+      <div className={s.div_text}>
+        <div className={s.div_name}>
+            <h3>{owner}</h3>
             <span>{rate}</span>
         </div>
         <div>
             <p>{text}</p>
         </div>
-        <div>
-          <span>reply</span>
-          <span>share</span>
+        <div className={s.div_options}>
+          <span>reply •</span>
+          <span>share •</span>
           <span>490 likes</span>
           <BsFillHandThumbsDownFill/>
           <BsFillHandThumbsUpFill/>
         </div>
       </div>
-      <hr/>
+      <div className={s.hr}/>
     </div>
   )
 }

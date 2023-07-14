@@ -21,30 +21,31 @@ export type TypeComment = {
     id: number
     text: string
     owner: number | string
-    rate: number
+    rate: string
 }
 
 const commentSample: TypeComment[] = [{
     id: 1,
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore",
-    owner: 'Lorem',
-    rate: 3
+    text: "I had the pleasure of trying their signature dish, which is a plate of delicious pasta served with a creamy sauce made from scratch. The pasta was perfectly cooked, al dente, and the sauce had a delightful balance of flavors. It was seasoned with fresh herbs that elevated the taste to another level. Every bite was a burst of culinary delight, and I highly recommend it to all pasta lovers!",
+    owner: "ItalianFoodLover",
+    rate: "😍"
 }, {
     id: 2,
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore",
-    owner: 'Lorem',
-    rate: 3
+    text: "Unfortunately, my experience with their steak was quite disappointing. The steak was overcooked and ended up being tough and chewy. It lacked the desired tenderness and juiciness that one expects from a perfectly cooked steak. I was expecting a melt-in-your-mouth experience, but it fell short of my expectations. I hope they improve their steak preparation in the future.",
+    owner: "SteakConnoisseur",
+    rate: "😠"
 }, {
     id: 3,
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore",
-    owner: 'Lorem',
-    rate: 3
-} , {
+    text: "I recently had the pleasure of enjoying their mouthwatering sushi rolls, and I must say, they were a culinary masterpiece. The sushi rolls were beautifully presented and made with the freshest fish available. Each piece was a perfect balance of flavors, and the fish melted in my mouth. The attention to detail in their sushi-making process was evident, and I can confidently say that it was one of the best sushi experiences I've had so far!",
+    owner: "SushiEnthusiast",
+    rate: "😍"
+}, {
     id: 4,
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore",
-    owner: 'Lorem',
-    rate: 3
-}]
+    text: "The dessert I had was a heavenly delight! It was a rich and decadent creation that showcased a perfect blend of flavors. The presentation of the dessert was artful, with intricate details that showed the skill and creativity of the chef. Every spoonful was a delight to the senses, and it left me craving for more. If you have a sweet tooth like me, you absolutely must try this dessert!",
+    owner: "SweetTooth",
+    rate: "😲"
+}];
+
 
 const menuSample: TypeFood[] = [{
     id: 1,

@@ -17,7 +17,7 @@ type FoodProps = {
     name: string
     description: string
     comments: TypeComment[]
-    rate: number
+    rate: string
 }
 
 export default function Food({img, id,name,description,comments, rate}: FoodProps ){
