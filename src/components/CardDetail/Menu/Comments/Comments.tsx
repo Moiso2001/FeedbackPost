@@ -28,11 +28,13 @@ export default function Comments({text, owner, rate}: CommentsProps) {
             <p>{text}</p>
         </div>
         <div className={s.div_options}>
-          <span>reply •</span>
-          <span>share •</span>
-          <span>490 likes</span>
-          <BsFillHandThumbsDownFill/>
-          <BsFillHandThumbsUpFill/>
+          <span className={s.icon_options}>reply</span>
+          <span> • </span>
+          <span className={s.icon_options}>share</span>
+          <span> • </span>
+          <span className={s.icon_options}>490 likes</span>
+          <BsFillHandThumbsDownFill className={s.icon_options}/>
+          <BsFillHandThumbsUpFill className={s.icon_options}/>
         </div>
       </div>
       <div className={s.hr}/>
