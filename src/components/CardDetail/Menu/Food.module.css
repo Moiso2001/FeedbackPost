@@ -60,3 +60,73 @@
 
     padding: 1em;
 }
+
+/* Comment Section */
+
+.div_comments{
+    margin-top: 5em;
+}
+
+.div_header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 10%;
+
+    margin: 1em;
+}
+
+.div_header h3{
+    font-size: 3em;
+    margin: 0;
+}
+
+.div_header span{
+    color: rgba(0, 0, 0, 0.586);
+}
+
+.div_sort{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    color: rgba(0, 0, 0, 0.777);
+    margin-top: 1.5em;
+}
+
+.div_input{
+    display: grid;
+    grid-template-columns: 10% 90%;
+
+    margin-top: 4em;
+}
+
+.div_circle2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 100%;
+
+    width: 5em;
+    height: 5em;
+    background-color: #d4b803b8;
+}
+
+.div_circle2 span{
+    color: rgba(0, 0, 0, 0.498);
+    font-size: 2em;
+}
+
+.div_input textarea{
+    width: 100%;
+    height: 20vh;
+
+    border: solid 2px rgba(0, 0, 0, 0.555);
+    background-color: transparent;
+    padding: 0.5em;
+
+    outline: none;
+
+    border-radius: 8px;
+}

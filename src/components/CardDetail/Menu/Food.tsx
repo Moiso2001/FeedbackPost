@@ -44,22 +44,24 @@ export default function Food({img, id,name,description,comments, rate}: FoodProp
                 </div>  
             </div>
             <div className={show ? s.div_comments : s.div_none}>
-                <div>
-                    <h3>{comments.length}</h3>
+                <div className={s.div_header}>
+                    <h3>121</h3>
                     <span>comments</span>
                 </div>
                 <hr/>
-                <div>
+                <div className={s.div_sort}>
                     <span>Sort By Newest</span>
                     <BsArrowDownCircleFill/>
                 </div>
-                <div>
+                <div className={s.div_input}>
                     <div>
-                        <img/>
+                        <div className={s.div_circle2}>
+                            <span>M</span>
+                        </div>
                     </div>
                     <div>
-                        <textarea/>
-                        <button>Submit</button>
+                        <textarea placeholder='How was your experience...'/>
+                        <button>Post</button>
                     </div>
                 </div>
                 <div>
