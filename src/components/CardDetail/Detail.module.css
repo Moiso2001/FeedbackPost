@@ -19,10 +19,12 @@
     align-items: center;
 
     margin-top: 2em;
+
+    margin-bottom: 5em;
 }
 
 .div_header h2{
-    color: rgba(0, 0, 0, 0.603);
+    color: rgba(0, 0, 0, 0.853);
 
     font-size: 2em;
 }
@@ -30,6 +32,8 @@
 .div_header p{
     width: 50%;
     text-align: center;
+
+    color: rgba(0, 0, 0, 0.641);
 }
 
 .hr1{

@@ -3,13 +3,23 @@
 }
 
 .div_global{
-    margin: 3em;
+    margin: 4em;
     width: 60%;
+}
+
+.div_circle{
+    margin: 0 auto;
 }
 
 .div_food{
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 50% 50%;
+}
+
+.div_food__reversed{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    direction: rtl;
 }
 
 .circle{
@@ -19,4 +29,34 @@
     background-color: #d4b80388;
 
     border-radius: 100%;
+}
+
+.div_title h3{
+    font-size: 2em;
+    font-weight: bold;
+    font-stretch: condensed;
+    margin: 0 0 1em 0;
+}
+
+.div_text{
+    display: flex;
+    flex-direction: column;
+}
+.div_text span{
+    width: 70%;
+    font-size: 0.9em;
+    text-align: justify;
+
+    color: rgba(0, 0, 0, 0.685);
+}
+
+.div_text button{
+    border: black 1px solid;
+
+    background-color: transparent;
+    margin-top: 2em;
+    width: 30%;
+    font-weight: 600;
+
+    padding: 1em;
 }

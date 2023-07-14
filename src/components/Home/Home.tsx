@@ -1,8 +1,6 @@
 /* React Icons */
 import {CiFacebook} from "react-icons/ci" // Facebook
 import {PiInstagramLogoLight, PiTiktokLogoLight, PiStarFourThin} from "react-icons/pi" // Instagram n Tiktok
-import {FaAppStore} from "react-icons/fa"
-import { BiLogoPlayStore } from "react-icons/bi"
 
 /* Images png */
 import homeImage from "../../assets/steps icon.png"
@@ -40,29 +38,6 @@ export default function Home() {
       </div>
 
       <Cards/>
-
-      <footer className={s.footer}>
-        <div className={s.div_title}>
-          <h1 className={s.title_yellow}>Feedback</h1>
-          <h1 className={s.title_green}>Post</h1>
-        </div>
-        <div className={s.div_navbar}>
-            <ul>
-                <li>Home</li>
-                <li>Favourites</li>
-                <li>Contact</li>
-            </ul>
-        </div>
-        <div className={s.div_app}>
-          <BiLogoPlayStore className={s.appIcon}/>
-          <FaAppStore className={s.appIcon}/>
-        </div>
-        <div className={s.div_footer__content}>
-          <p>&copy; 2023 Your Restaurant Name. All rights reserved.</p>
-        </div>
-      </footer>
-
-
 
     </div>
   )

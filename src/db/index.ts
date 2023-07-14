@@ -49,21 +49,21 @@ const commentSample: TypeComment[] = [{
 const menuSample: TypeFood[] = [{
     id: 1,
     img: 'https://img.freepik.com/fotos-premium/tazon-burrito-pollo-mexicano-arroz-frijoles-tomate-aguacate-maiz-espinacas-fondo-blanco-concepto-comida-cocina-mexicana_79830-2856.jpg?w=2000',
-    name: 'Lorem',
+    name: 'CREP CHICKEN',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore',
     comments: commentSample,
     rate: 3
 } , {
     id: 2,
     img: '',
-    name: 'Lorem',
+    name: 'SOUP LE CREAM',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore',
     comments: commentSample,
     rate: 3
 } , {
     id: 3,
     img: '',
-    name: 'Lorem',
+    name: 'CHICKEN',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore',
     comments: commentSample,
     rate: 3

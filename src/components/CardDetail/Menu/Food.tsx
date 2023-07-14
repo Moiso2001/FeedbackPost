@@ -12,6 +12,7 @@ import s from "./Food.module.css"
 
 
 type FoodProps = {
+    id: number
     img: string
     name: string
     description: string
@@ -19,25 +20,27 @@ type FoodProps = {
     rate: number
 }
 
-export default function Food({img,name,description,comments, rate}: FoodProps ){
+export default function Food({img, id,name,description,comments, rate}: FoodProps ){
     const [show, setShow] = useState<boolean>(false)
 
     return(
         <div className={s.div_global}>
-            <div className={s.div_food}>
-                <div>
+            <div className={id % 2 !== 0 ? s.div_food : s.div_food__reversed}>
+                <div className={s.div_circle}>
                     <div className={s.circle}/>
                 </div>
-                <div>
+                <div className={s.div_title}>
                     <div>
-                        <h3>{name}</h3>
                         <div>
                             <span>{rate}</span>
                             <AiFillStar/>
                         </div>
+                        <h3>{name}</h3>
                     </div>
-                    <span>{description}</span>
-                    <button onClick={() => setShow(s => !s)}>Your Feedback</button>
+                    <div className={s.div_text}>
+                        <span>{description}</span>
+                        <button onClick={() => setShow(s => !s)}>Feedback</button>
+                    </div>    
                 </div>  
             </div>
             <div className={show ? s.div_comments : s.div_none}>

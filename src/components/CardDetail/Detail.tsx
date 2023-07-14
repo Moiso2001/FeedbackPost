@@ -40,6 +40,7 @@ export default function Detail() {
                 {restaurant.menu.map((e: TypeFood) => 
                     <Food
                         key={e.id}
+                        id={e.id}
                         img={e.img}
                         name={e.name}
                         description={e.description}
