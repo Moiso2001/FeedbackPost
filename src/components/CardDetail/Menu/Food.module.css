@@ -130,3 +130,28 @@
 
     border-radius: 8px;
 }
+
+.div_input button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 102.5%;
+    height: 8vh;
+
+    margin: 0.5em 1em 0 0;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: rgba(32, 24, 72, 0.074);
+
+    font-size: 1.6em;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.555);
+
+    transition: background-color 0.20s;
+}
+
+.div_input button:hover{
+    background-color: rgba(32, 24, 72, 0.122);
+}
