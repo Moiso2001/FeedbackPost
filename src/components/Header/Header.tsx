@@ -8,6 +8,9 @@ import {CiSearch} from "react-icons/ci";
 import {BsPersonCircle} from "react-icons/bs";
 import {MdStars} from "react-icons/md";
 
+/* React Icons */
+import { Link } from 'react-router-dom';
+
 export default function Header() {
   return (
     <div className={s.div_global}>
@@ -17,9 +20,15 @@ export default function Header() {
         </div>
         <div className={s.div_navbar}>
             <ul>
+              <Link to='/' style={{"textDecoration": "none", "color": "rgba(0, 0, 0, 0.631)"}}>
                 <li>Home</li>
-                <li>Favourites</li>
+              </Link>
+              <Link to='/' style={{"textDecoration": "none", "color": "rgba(0, 0, 0, 0.631)"}}>
+                  <li>Favourites</li>
+              </Link>
+              <Link to='/' style={{"textDecoration": "none", "color": "rgba(0, 0, 0, 0.631)"}}>
                 <li>Contact</li>
+              </Link>
             </ul>
         </div>
         <div className={s.div_helpers}>
