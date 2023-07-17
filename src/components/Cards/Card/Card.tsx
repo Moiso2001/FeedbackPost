@@ -32,4 +32,4 @@ export default function Card({img, name, cost}: CardProps) {
   )
 }
 
-//t
+//
